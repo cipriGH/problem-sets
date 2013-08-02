@@ -7,6 +7,8 @@
 	number of times that the symbols 'A', 'C', 'G', and 'T' occur in s.
 	
 """
+from helperFuncs import getSequence, printListOfInts
+
 def count_nucleotides(sequence):
 	"""
 	count_nucleotides(sequence)
@@ -30,33 +32,6 @@ def count_nucleotides(sequence):
 	nT = sequence.count('T')
 	nucCounts = (nA, nC, nG, nT)
 	return nucCounts
-
-def getSequence(filename=""):
-	"""
-	getSequence(filename)
-	
-	Reads nucleotide sequence from a single-line file
-	
-	Parameters
-	----------
-	filename : string
-			   String passed from command line containing path to file
-	
-	Returns
-	-------
-	sequence : string
-			   String containing nucleotide sequence.
-	
-	"""
-	try:
-		file = open(filename)
-	except IOError:
-		print("File could not be opened, or does not exist")
-		return
-	return file.readline().strip('\n')
-
-def printListOfInts(listofints):
-	print(' '.join([str(c) for c in listofints]))
 	
 def test_DNA():
 	sampleDNA = "AGCTTTTCATTCTGACTGCAACGGGCAATATGTCTCTGTGTGGATT" + \
