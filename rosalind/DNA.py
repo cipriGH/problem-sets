@@ -65,7 +65,10 @@ def test_DNA():
 
 	assert(count_nucleotides(sampleDNA)==sampleOutput)
 
-if __name__=='__main__':
+def main():
 	from sys import argv
 	seq = getSequence(argv[1])
 	printListOfInts(count_nucleotides(seq))
+
+if __name__=='__main__':
+	main()
