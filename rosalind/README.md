@@ -1,7 +1,7 @@
 # rosalind
 
 Problem descriptions are in the docstrings. Tests are
-implemented within each file. Run all tests using ``nosetests``
+implemented within each file. Run all tests using ``nosetests``.
 
 ## Filename/problem codes
 
