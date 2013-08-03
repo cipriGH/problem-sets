@@ -9,8 +9,15 @@
 
 	Return: The Hamming distance dH(s,t).
 """
+from helperFuncs import getMultipleSequences
+from sys import argv
 
-
+def hamming_dist(s,t):
+	hd = 0
+	for i in range(len(s)):
+		if s[i] != t[i]:
+			hd = hd + 1
+	return hd
 
 
 def test_hamming_dist():
@@ -18,3 +25,10 @@ def test_hamming_dist():
 	t = "CATCGTAATGACGGCCT"
 	sampleOutput=7
 	assert(hamming_dist(s,t)==sampleOutput)
+
+def main():
+	s, t = getMultipleSequences(argv[1])
+	print(hamming_dist(s,t))
+
+if __name__=='__main__':
+	main()

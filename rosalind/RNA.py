@@ -4,7 +4,7 @@
     
 
 """
-from getSequence import getSequence
+from helperFuncs import getSequence
 
 def dna_to_rna(dnaseq):
     """
