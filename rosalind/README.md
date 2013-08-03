@@ -1,4 +1,5 @@
 # rosalind
+rosalind.info/users/right_on_by/
 
 Problem descriptions are in the docstrings. Tests are
 implemented within each file. Run all tests using ``nosetests 
