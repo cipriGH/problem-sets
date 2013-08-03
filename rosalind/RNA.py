@@ -15,8 +15,8 @@ def dna_to_rna(dnaseq):
     return dnaseq.replace("T", "U")
 
 def test_RNA():
-    sampleDNA = "GCAT"
-    sampleOutput = "GCAU"
+    sampleDNA = "GATGGAACTTGACTACGTAAATT"
+    sampleOutput = "GAUGGAACUUGACUACGUAAAUU"
     assert(dna_to_rna(sampleDNA)==sampleOutput)
 
 def main():
