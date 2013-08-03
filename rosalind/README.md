@@ -8,25 +8,26 @@ implemented within each file. Run all tests using ``nosetests
 ## Filename/problem codes
 
 ProblemID : Problem Title
-Completed problems marked with a -
 
--DNA 	:	Counting DNA Nucleotides
+Completed problems marked with a *
 
--RNA 	:	Transcribing DNA into RNA	
+*DNA 	:	Counting DNA Nucleotides
 
--REVC	:	Complementing a Strand of DNA	
+*RNA 	:	Transcribing DNA into RNA	
 
--FIB		:	Rabbits and Recurrence Relations	
+*REVC	:	Complementing a Strand of DNA	
 
--GC  	:	Computing GC Content
+*FIB		:	Rabbits and Recurrence Relations	
 
--HAMM	:	Counting Point Mutations	
+*GC  	:	Computing GC Content
 
--IPRB	:	Mendel's First Law	
+*HAMM	:	Counting Point Mutations	
 
--PROT	:	Translating RNA into Protein	
+*IPRB	:	Mendel's First Law	
 
--SUBS	:	Finding a Motif in DNA	
+*PROT	:	Translating RNA into Protein	
+
+*SUBS	:	Finding a Motif in DNA	
 
 CONS	:	Consensus and Profile	
 
