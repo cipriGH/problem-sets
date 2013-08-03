@@ -25,21 +25,46 @@ def getSequence(filename=""):
 	
 	"""
 	try:
-		file = open(filename)
+		seqfile = open(filename)
 	except IOError:
 		print("File could not be opened, or does not exist")
 		return
-	return file.readline().strip('\n')
+	return seqfile.readline().strip('\n')
 
 def getMultipleSequences(filename=""):
 	"""
 	"""
 	try:
-		file = open(filename)
+		seqfile = open(filename)
 	except IOError:
 		print("File could not be opened, or does not exist")
 		return
-	return [lin.strip('\n') for lin in file.readlines()]
+	return [lin.strip('\n') for lin in seqfile.readlines()]
 
 def printListOfInts(listofints):
 	print(' '.join([str(c) for c in listofints]))
+
+
+def getFASTAdict(filename):
+	"""
+	Reads file containing rosalind's FASTA formatted sequences and 
+	returns each id:sequence pair as entries in a python dictionary. 
+	"""
+	try:
+		fastafile = open(filename)
+	except IOError:
+		print("File could not be opened, or does not exist")
+		return
+	
+	fastalist = ''.join(fastafile.readlines()).replace('\n','').split('>')
+	fastalist = [f.strip('>') for f in fastalist]
+	
+	fastaDict = {}
+	
+	for p in fastalist:
+		fastaDict[p[0:13]]=p[13:]
+	
+	del fastaDict['']
+	#print fastaDict
+	
+	return fastaDict
