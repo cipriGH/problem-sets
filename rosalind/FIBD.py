@@ -1,5 +1,6 @@
 """
 	FIBD:	Mortal Fibonacci Rabbits
+	borrowed solution...
 """
 from sys import argv
 
