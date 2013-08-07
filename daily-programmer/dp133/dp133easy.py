@@ -45,6 +45,7 @@
 
 
 """
+from sys import argv
 
 def foot_traffic_analysis():
 	pass
@@ -52,8 +53,13 @@ def foot_traffic_analysis():
 def parse_inputfile(filename):
 	pass
 
-def main():
+def parse_outputfile(filename):
+	#	for testing
 	pass
+
+def main():
+	infile = argv[1]
+	print infile
 
 if __name__ == '__main__':
 	main()
